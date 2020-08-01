@@ -12,6 +12,15 @@ $this->title = 'rocket';
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <?php $model = new app\models\Recipe(); ?>
+        <?= $model->ipAddress ?>
+        <?= $model->getID() ?>
+        <?php $model->title = 'title'; $model->introduction = 'introduction';?>
+        <?php foreach ($model->attributes() as $att) {
+            echo "$att</hr>";
+        }?>
+        <?= $model->validate() ? '成功' : $model->errors[0] ?>
+        <?= $model->save() ? '成功' : ' 失败' ?>
     </div>
 
     <div class="body-content">
