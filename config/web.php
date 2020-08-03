@@ -56,14 +56,16 @@ $config = [
                 ],
             ],
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false,
+            'showScriptName' => false, //是否显示index.php
+            'suffix' =>'.html',
             'rules' => [
+                'recipes' =>'recipe/list',
+                'recipe/<id:\d+>' => 'recipe/index',
+                'login' =>'site/login',
             ],
         ],
-        */
     ],
     'modules' => [
         'user' => [
