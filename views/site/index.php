@@ -20,7 +20,9 @@ $this->title = 'rocket';
             echo "$att</hr>";
         }?>
         <?= $model->validate() ? '成功' : $model->errors[0] ?>
+        <?php if (!Yii::$app->user->isGuest): ?>
         <?= $model->save() ? '成功' : ' 失败' ?>
+        <?php endif; ?>
     </div>
 
     <div class="body-content">
