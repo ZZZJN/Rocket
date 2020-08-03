@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-class User extends \rhosocial\base\models\models\BaseBlameableModel
+class User extends \rhosocial\user\User
 {
     public $profileClass = Profile::class;
 }
