@@ -35,14 +35,14 @@ AppAsset::register($this);
             float: left;
             width: 30%;
             height:450px;
-            margin: 0px 30px 0px 10px;
+            margin: -10px 30px 0px 10px;
             background-color: rgba(255, 219, 204, 0);
         }
         .half2{
             float: left;
             width: 30%;
             height:450px;
-            margin: 0px 10px 0px 30px;
+            margin: -10px 10px 0px 30px;
             background-color: rgba(255, 219, 204, 0);
          }
         .center{
@@ -66,6 +66,12 @@ AppAsset::register($this);
             margin-bottom: 5px;
             line-height: 21px;
             color: #94401b;
+        }
+        .infos-text{
+            font-size: 15px;
+            margin-bottom: 5px;
+            line-height: 21px;
+            color: #b6af90;
         }
         .btn-org{
             color: #ffffff;

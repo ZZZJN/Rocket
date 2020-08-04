@@ -10,14 +10,10 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="center">
     <div class="divs">
         <div class="imgs">
-            <img src="/web/logo/横版图文.png" width="200" height="100"/>
+            <img src="<?=yii\helpers\Url::to('@web/logo/图.png')?>" width="200" height="200"/>
         </div>
         <div class="id">&nbsp;我创作的菜谱<div class="infos">&nbsp;「唯美食与爱不可辜负」</div></div>
     </div>
-    <hr>
-    <h1>
-
-    </h1>
     <hr>
 </div>
 
