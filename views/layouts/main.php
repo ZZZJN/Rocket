@@ -29,31 +29,44 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandImage'=> '@web/logo/navbar logo.png',
+        //'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-light navbar-fixed-top',
+            //'style' => "background-color: #d6eaea;" 浅蓝色
+            'style' => "background-color: #F0EFEB;"
+
         ],
     ]);
+    $userUrl=yii\helpers\Url::toRoute('users/index');
+    $change=Yii::$app->user->isGuest ? (
+    ['label' => '登录', 'url' => ['/site/login']]
+    ) : (
+        '<li>'
+        .'<a href="'
+        .$userUrl
+        .'">'
+        .'<img src="/用户头像/测试头像navbar用.JPG" alt="我的头像" class="img-circle" width="35px"'
+        .'</a>'
+        . '</li>'
+        .'<li>'
+        . Html::beginForm(['/site/logout'], 'post')//应改为进入个人中心
+        . Html::submitButton(
+            '退出',
+            ['class' => 'btn btn-link logout']
+        )
+        . Html::endForm()
+        . '</li>'
+    );
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => '首页', 'url' => ['/site/index']],
-            ['label' => '菜谱', 'url' => ['/recipe/index']],
-            ['label' => '用户中心', 'url' => ['/users/index']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->ID . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
+            ['label' => '食谱', 'url' => ['/recipe/list']],
+            ['label' => '食材', 'url' => ['/food/list']],
+            ['label' => '健康知识', 'url' => ['/healthknowledge/index']],
+             $change
+            ],
     ]);
     NavBar::end();
     ?>
