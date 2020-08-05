@@ -16,11 +16,11 @@ use yii\widgets\DetailView;
 ?>
 
 <div class="divs">
-    <div class="imgs">
+    <div class="imgnormal">
         <img src="http://p1.music.126.net/5jWlBF-lPNvKlqm9Am_K7A==/109951163646752700.jpg?param=180y180"
              class="img-circle" width="100" height="100">
     </div>
-    <div class="id">&nbsp;" <?= $nickname ?> " </div>
+    <div class="id"><strong>&nbsp;" <?= $nickname ?> " </strong></div>
 </div>
 <hr>
 <div class="infos">
