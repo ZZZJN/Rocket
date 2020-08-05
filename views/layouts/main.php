@@ -46,7 +46,7 @@ AppAsset::register($this);
         .'<a href="'
         .$userUrl
         .'">'
-        .'<img src="/用户头像/测试头像navbar用.JPG" alt="我的头像" class="img-circle" width="35px"'
+        .'<img src="/用户头像/测试头像navbar用.JPG" alt="我的头像" class="img-circle" width="35px">'
         .'</a>'
         . '</li>'
         .'<li>'
