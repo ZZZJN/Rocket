@@ -10,7 +10,7 @@ use yii\web\View;
 
 <div class="divs">
     <div class="imghover">
-        <img src="<?=yii\helpers\Url::to('@web/logo/图7.4users用.png')?>" width="140" height="80"/>
+        <img src="<?=yii\helpers\Url::to('@web/logo/图7.4users用.png')?>" width="175" height="100"/>
     </div>
     <div class="id">
         <strong> &nbsp;<?= $title ?></strong>
