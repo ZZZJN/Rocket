@@ -6,7 +6,7 @@ namespace app\models;
 
 class Recipe extends \rhosocial\base\models\models\BaseBlameableModel
 {
-    public $title;
+    //public $title;
     public $contentAttribute = 'introduction';
     public $contentAttributeRule = ['string', 'max' => 65535];
     public $idAttributeType = 1;
@@ -22,5 +22,13 @@ class Recipe extends \rhosocial\base\models\models\BaseBlameableModel
     {
         $attributes = ['title'];
         return array_merge(parent::attributes(), $attributes);
+    }
+    public function getSteps()
+    {
+        return $this->hasMany(RecipeStep::class,['recipe_guid'=>'guid']);
+    }
+    public function getClassification()
+    {
+        return $this->hasMany(Classification::class,['recipe_guid'=>'guid']);
     }
 }

@@ -31,4 +31,14 @@ class UsersController extends \yii\web\Controller
         return $this->render('other-user');
     }
 
+    public function actionUploadRecipe()
+    {
+        return $this->render('upload-recipe');
+    }
+
+    public function actionUploadRecipeDetail()
+    {
+        return $this->render('upload-recipe-detail');
+    }
+
 }
