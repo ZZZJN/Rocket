@@ -139,7 +139,7 @@ AppAsset::register($this);
         'items' => [
             ['label' => '首页', 'url' => ['/site/index']],
             ['label' => '食谱', 'url' => ['/recipe/list']],
-            ['label' => '食材', 'url' => ['/food/index']],
+            ['label' => '食材', 'url' => ['/ingredient/index']],
             ['label' => '健康知识', 'url' => ['/healthknowledge/index']],
             $change
         ],
