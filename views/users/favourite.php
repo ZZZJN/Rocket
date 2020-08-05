@@ -8,13 +8,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="center">
-    <div class="divs">
-        <div class="imgs">
-            <img src="<?=yii\helpers\Url::to('@web/logo/图.png')?>" width="200" height="200"/>
-        </div>
-        <div class="id">&nbsp;我收藏的菜谱<div class="infos">&nbsp;「吃是最好的安慰」</div></div>
-    </div>
-    <hr>
-
+    <?= app\widgets\UsersHeader::widget(['title' => '我收藏的菜谱','slogan' => '吃是最好的安慰']) ?>
 </div>
 

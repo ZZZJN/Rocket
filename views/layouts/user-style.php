@@ -27,7 +27,7 @@ AppAsset::register($this);
         .left{
             float: left;
             width: 18%;
-            height:500px;
+            height:600px;
             margin: 0px 10px 0px;
             background-color: rgba(255, 219, 204, 0);
         }
@@ -47,12 +47,18 @@ AppAsset::register($this);
          }
         .center{
             float: left;
-            width: 75%;
+            width: 60%;
             height:100%;
-            margin: 0px 30px 0px 10px;
+            margin: 0px 30px 0px 45px;
             background-color: rgba(255, 255, 255, 0);
         }
-        .divs .imgs{
+        .divs .imgnormal{
+            margin-bottom: 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .divs .imghover{
+            margin-bottom: 55px;
             display: inline-block;
             vertical-align: middle;
         }
@@ -60,6 +66,9 @@ AppAsset::register($this);
             font-size: 30px;
             color: #d09371;
             display: inline-block;
+        }
+        .divs .hr{
+            margin-top: -45px;
         }
         .infos{
             font-size: 15px;
@@ -73,13 +82,20 @@ AppAsset::register($this);
             line-height: 21px;
             color: #b6af90;
         }
+        .subttl{
+            font-size: 14px;
+            color: #555555;
+        }
         .btn-org{
             color: #ffffff;
             background-color: #d09371;
         }
-        .btn-org:hover {
-            background: #d09371;
-            color: #edd399;
+        .btn-org:hover{
+            background: #b6af90;
+            color: rgb(255, 235, 188);
+        }
+        .btn-org:active{
+            color: rgb(148, 64, 27);
         }
     </style>
 </head>
@@ -89,30 +105,43 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandImage'=> '@web/logo/navbar logo.png',
+        //'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-light navbar-fixed-top',
+            //'style' => "background-color: #d6eaea;" 浅蓝色
+            'style' => "background-color: #F0EFEB;"
+
         ],
     ]);
+    $userUrl=yii\helpers\Url::toRoute('users/index');
+    $change=Yii::$app->user->isGuest ? (
+    ['label' => '登录', 'url' => ['/site/login']]
+    ) : (
+        '<li>'
+        .'<a href="'
+        .$userUrl
+        .'">'
+        .'<img src="/用户头像/测试头像navbar用.JPG" alt="我的头像" class="img-circle" width="35px"'
+        .'</a>'
+        . '</li>'
+        .'<li>'
+        . Html::beginForm(['/site/logout'], 'post')//应改为进入个人中心
+        . Html::submitButton(
+            '退出',
+            ['class' => 'btn btn-link logout']
+        )
+        . Html::endForm()
+        . '</li>'
+    );
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => '首页', 'url' => ['/site/index']],
-            ['label' => '菜谱', 'url' => ['/recipe/index']],
-            ['label' => '用户中心', 'url' => ['/users/index']],
-            Yii::$app->user->isGuest ? (
-            ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->ID . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
+            ['label' => '食谱', 'url' => ['/recipe/list']],
+            ['label' => '食材', 'url' => ['/food/index']],
+            ['label' => '健康知识', 'url' => ['/healthknowledge/index']],
+            $change
         ],
     ]);
     NavBar::end();
