@@ -27,4 +27,8 @@ class Recipe extends \rhosocial\base\models\models\BaseBlameableModel
     {
         return $this->hasMany(RecipeStep::class,['recipe_guid'=>'guid']);
     }
+    public function getClassification()
+    {
+        return $this->hasMany(Classification::class,['recipe_guid'=>'guid']);
+    }
 }
