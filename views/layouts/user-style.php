@@ -52,6 +52,13 @@ AppAsset::register($this);
             margin: 0px 30px 0px 45px;
             background-color: rgba(255, 255, 255, 0);
         }
+        .cinfo{
+            float: right;
+            width: 70%;
+            height:100%;
+            margin: 0px 0px 0px 0px;
+            background-color: rgba(255, 255, 255, 0);
+        }
         .divs .imgnormal{
             margin-bottom: 15px;
             display: inline-block;
@@ -91,11 +98,22 @@ AppAsset::register($this);
             background-color: #d09371;
         }
         .btn-org:hover{
-            background: #b6af90;
+            background: #95401b;
             color: rgb(255, 235, 188);
         }
         .btn-org:active{
             color: rgb(148, 64, 27);
+        }
+        .btn-orggg{
+            color: #ffffff;
+            background-color: #edd399;
+        }
+        .btn-orggg:hover{
+            background: #b6af90;
+            color: rgb(255, 235, 188);
+        }
+        .btn-orggg:active{
+            color: rgb(237, 211, 153);
         }
     </style>
 </head>

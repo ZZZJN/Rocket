@@ -23,13 +23,13 @@ use yii\widgets\DetailView;
     <div class="id"><strong>&nbsp;" <?= $nickname ?> " </strong></div>
 </div>
 <hr>
-<div class="infos">
-    ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?= $id ?>
+<div class="infos" style="color: #1f2833">
+    <strong>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?= $id ?></strong>
 </div>
 <hr>
-<div class="infos">
-    姓名&nbsp;&nbsp;&nbsp;&nbsp;<?= $last_name ?><?= $first_name ?>
+<div class="infos" style="color: #94401b">
+    <strong>姓名&nbsp;&nbsp;&nbsp;&nbsp;<?= $last_name ?><?= $first_name ?></strong>
 </div>
-<div class="infos">
-    性别&nbsp;&nbsp;&nbsp;&nbsp;<?= $gender ?>
+<div class="infos" style="color: #d09371">
+    <strong>性别&nbsp;&nbsp;&nbsp;&nbsp;<?= $gender==2 ? ("女") : ("男") ?></strong>
 </div>
