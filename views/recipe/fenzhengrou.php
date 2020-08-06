@@ -51,7 +51,7 @@
 <hr>
 <br>
 
-<div align="center" ;>
+<div align="center">
     <img src="/菜谱详情页/粉蒸肉.jpg" alt="粉蒸肉">
 </div><!--头图 --!>
 <br>
