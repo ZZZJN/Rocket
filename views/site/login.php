@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>Please fill out the following fields to login:</p>
     <?= $result = \rhosocial\user\widgets\LoginFormWidget::widget(['model' => $model]); ?>
-    <a type="button" class="btn" style="float: left;margin-left: 195px; font-size: 15px;
+    <a type="button" class="btn" style="float: left;margin-left: 195px; font-size: 13px;
     color: #ffffff;    background-color: #337ab6;"
        href="http://rocket/user/register/index.html">
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
