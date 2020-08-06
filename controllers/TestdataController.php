@@ -10,7 +10,7 @@ class TestdataController extends \yii\web\Controller
     {
         $users=\app\models\User::find()->all();
         $user=$users[0];
-        $addr=$user->create(\app\models\Recipe::class,['title'=>'西红柿炒蛋','introduction'=>'吧啦吧啦']);
+        $addr=$user->create(\app\models\Recipe::class,['title'=>'西红柿炒蛋','introduction'=>'吧啦吧啦','pic'=>'\菜谱缩略图\上海炒面.jpg']);
         return $addr->save();
     }
     public function actionAddRecipeStep()
