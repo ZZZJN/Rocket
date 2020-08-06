@@ -8,7 +8,7 @@
 <a href="<?= \yii\helpers\Url::toRoute('recipe/fenzhengrou') ?>">
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
     <div class="thumbnail">
-        <img src="<?=$recipe_imgsrc?>" alt=<?= $recipe_name?>; width="252"; height="120"; style="padding: 12px 10px 0px 10px;" >
+            <img src="<?=$recipe_imgsrc?>" alt=<?= $recipe_name?>; style="padding: 12px 10px 0px 10px">
         <div class="caption">
             <p style="font-size:18px;text-align: center;"><?= $recipe_name?></p>
         </div>

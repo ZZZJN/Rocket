@@ -8,7 +8,7 @@ use yii\web\View;
 
 ?>
 
-<div class="divs">
+<div class="divs" style="margin-bottom: -35px;">
     <div class="imghover">
         <img src="<?=yii\helpers\Url::to('@web/logo/图7.4users用.png')?>" width="175" height="100"/>
     </div>
@@ -17,8 +17,5 @@ use yii\web\View;
         <div class="infos">
             <strong> &nbsp;「<?= $slogan ?>」</strong>
         </div>
-    </div>
-    <div class="hr">
-        <hr>
     </div>
 </div>
