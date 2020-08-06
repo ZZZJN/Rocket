@@ -4,8 +4,14 @@
 
 use yii\helpers\Html;
 
-$this->title = '尿毒症患者健康知识';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = '尿毒症';
+$this->params['breadcrumbs'] = [
+    [
+        'label'=> '健康知识',
+        'url'=>['/health/index']
+    ],
+    '尿毒症'
+];
 $menu='User Menu';
 
 ?>
@@ -17,7 +23,7 @@ $menu='User Menu';
         <div class="id" style="margin-left: 10px;font-size: 45px;">
             <strong> &nbsp;尿毒症</strong>
             <div class="infos" style="font-size: 18px;">
-                <strong><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——「好好吃饭用心生活」</strong>
+                <strong><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——「谁不眷恋一茶一饭的光辉」</strong>
             </div>
         </div>
     </div>
