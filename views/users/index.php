@@ -21,7 +21,7 @@ $menu='User Menu';
     <hr>
     <br>
 
-        <a type="button"  style="float: right; margin-right: 100px" class="btn btn-org" href="http://rocket/users/change-password.html">
+        <a type="button"  style="float: right; margin-right: 100px" class="btn btn-org" href="http://rocket/user/security/change-password.html">
             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <strong>修改密码</strong>
         </a>
         <a type="button" style="float: right;" class="btn btn-orggg" href="http://rocket/users/change-user-information.html">
