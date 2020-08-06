@@ -4,17 +4,29 @@ namespace app\controllers;
 
 class RecipeController extends \yii\web\Controller
 {
-    public function actionIndex($id=0)
+    public function actionFenzhengrou()
     {
-        if ($id == 0) {
-            // $model = new Recipe(['title' => '菜名']);
-        }
-        return $this->render('index');
+        return $this->render('fenzhengrou');
+    }
+
+    public function actionDoujianglengmian()
+    {
+        return $this->render('doujianglengmian');
     }
 
     public function actionList()
     {
         return $this->render('list');
+    }
+
+    public function actionHomecookinglist()
+    {
+        return $this->render('homecookinglist');
+    }
+
+    public function actionChildrenlist()
+    {
+        return $this->render('childrenlist');
     }
 
 }
