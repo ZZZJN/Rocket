@@ -19,6 +19,6 @@ $this->params['breadcrumbs'][] = $this->title;
     color: #ffffff;    background-color: #337ab6;"
        href="http://rocket/user/register/index.html">
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-        还没有账号吗？快来注册吧！
+        Register Now！
     </a>
 </div>

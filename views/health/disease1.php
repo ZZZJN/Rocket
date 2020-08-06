@@ -4,8 +4,14 @@
 
 use yii\helpers\Html;
 
-$this->title = '痛风患者健康知识';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = '痛风';
+$this->params['breadcrumbs'] = [
+    [
+        'label'=> '健康知识',
+        'url'=>['/health/index']
+    ],
+    '痛风'
+];
 $menu='User Menu';
 
 ?>

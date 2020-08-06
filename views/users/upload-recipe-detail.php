@@ -8,7 +8,13 @@ use app\assets\AppAsset;
 use yii\widgets\ActiveForm;
 
 $this->title = '上传菜谱';
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'] = [
+    [
+        'label'=> '个人中心',
+        'url'=>['/users/index']
+    ],
+    '上传菜谱'
+];
 ?>
 
 <div class="center">
