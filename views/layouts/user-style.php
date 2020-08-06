@@ -24,13 +24,6 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <style>
-        .left{
-            float: left;
-            width: 18%;
-            height:600px;
-            margin: 0px 10px 0px;
-            background-color: rgba(255, 219, 204, 0);
-        }
         .half1{
             float: left;
             width: 30%;
@@ -45,12 +38,26 @@ AppAsset::register($this);
             margin: -10px 10px 0px 30px;
             background-color: rgba(255, 219, 204, 0);
          }
+        .box{
+            height: 1200px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .left{
+            float: left;
+            width: 200px;
+            height: 100%;
+            background:#ffffff;
+            margin-left: -100%;
+        }
         .center{
             float: left;
-            width: 60%;
-            height:100%;
-            margin: 0px 30px 0px 45px;
-            background-color: rgba(255, 255, 255, 0);
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+        }
+        #center_main{
+            margin: 0px 50px 0px 225px;
         }
         .cinfo{
             float: right;
@@ -106,7 +113,7 @@ AppAsset::register($this);
         }
         .btn-orggg{
             color: #ffffff;
-            background-color: #edd399;
+            background-color: #b49757;
         }
         .btn-orggg:hover{
             background: #b6af90;
@@ -171,6 +178,11 @@ AppAsset::register($this);
         ]) ?>
         <?= Alert::widget() ?>
         <div class="box">
+            <div class="center">
+                <div id="center_main" style="padding:10px 20px 10px 0px;">
+                    <?= $content ?>
+                </div>
+            </div>
             <div class="left">
                 <?php echo Menu::widget([
                     'options' => ['class' => 'nav nav-pills nav-stacked custom-nav'],
@@ -191,7 +203,6 @@ AppAsset::register($this);
                     ]
                 ]) ?>
             </div>
-            <?= $content ?>
         </div>
     </div>
 </div>
