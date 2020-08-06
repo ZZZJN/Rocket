@@ -157,8 +157,21 @@ AppAsset::register($this);
                         'usr_name'=>'爱生活的多妈','usr_imgsrc'=>'/用户头像/粉蒸肉.JPG']) ?>
                     <?= app\widgets\recipe缩略图::widget(['recipe_name'=>'五香酱牛肉','recipe_imgsrc'=>'/菜谱缩略图/五香酱牛肉.jpeg',
                         'usr_name'=>'爱生活的多妈','usr_imgsrc'=>'/用户头像/粉蒸肉.JPG']) ?>
-                    <?= app\widgets\recipe缩略图::widget(['recipe_name'=>'豆浆凉面','recipe_imgsrc'=>'/菜谱缩略图/豆浆凉面图.jpeg',
-                        'usr_name'=>'爱生活的多妈','usr_imgsrc'=>'/用户头像/粉蒸肉.JPG']) ?>
+                    <a href="<?= \yii\helpers\Url::toRoute('recipe/doujiangliangmian') ?>">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail">
+                                <img src="/菜谱详情页/豆浆冷面.jpg" alt='豆浆凉面'; style="padding: 12px 10px 0px 10px">
+                                <div class="caption">
+                                    <p style="font-size:18px;text-align: center;">豆浆凉面</p>
+                                </div>
+                                <span>
+                                    <img src="/用户头像/粉蒸肉.JPG" alt=爱生活的多妈 style="width:40px;padding:0px 0px 12px 15px">
+                                    <span style="font-size:14px;padding-left: 5px;">爱生活的多妈</span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
                     <?= app\widgets\recipe缩略图::widget(['recipe_name'=>'白灼芥蓝','recipe_imgsrc'=>'/菜谱缩略图/白灼芥蓝.jpeg',
                         'usr_name'=>'爱生活的多妈','usr_imgsrc'=>'/用户头像/粉蒸肉.JPG']) ?>
                     <?= app\widgets\recipe缩略图::widget(['recipe_name'=>'泰式柠檬虾 酸酸甜甜就是我','recipe_imgsrc'=>'/菜谱缩略图/泰式柠檬虾 酸酸甜甜就是我.jpeg',
