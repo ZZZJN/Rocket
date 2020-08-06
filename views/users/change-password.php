@@ -8,5 +8,6 @@ $this->title = '修改密码';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-
-<?= \rhosocial\user\widgets\ChangePasswordFormWidget::widget(['model'=>$form]) ?>
+<div class="cinfo">
+    <?= \rhosocial\user\widgets\ChangePasswordFormWidget::widget(['model'=>$form]) ?>
+</div>

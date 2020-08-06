@@ -8,9 +8,9 @@ $this->title = '修改信息';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-
-<?= \rhosocial\user\widgets\ProfileFormWidget::widget() ?>
-
+<div class="cinfo">
+    <?= \rhosocial\user\widgets\ProfileFormWidget::widget() ?>
+</div>
 
 
 
