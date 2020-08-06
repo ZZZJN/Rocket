@@ -2,7 +2,7 @@
 ?>
 <h3 style="margin-left: 20px;color: #a03a07;">热门分类</h3>
 <ul class="nav nav-pills nav-stacked" style="background-color: #DABEC0;margin: 20px 30% 0px 20px;padding: 5px">
-    <li class="active"><a href="<?= \yii\helpers\Url::toRoute('recipe/homecookinglist') ?>">家常菜</a></li>
+    <li class="active"><a href="<?= \yii\helpers\Url::toRoute('recipe/list') ?>">家常菜</a></li>
     <li><a href="#">快手菜</a></li>
     <li><a href="#">下饭菜</a></li>
     <li><a href="#">早餐</a></li>

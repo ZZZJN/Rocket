@@ -9,21 +9,15 @@ class RecipeController extends \yii\web\Controller
         return $this->render('fenzhengrou');
     }
 
-    public function actionDoujianglengmian()
+    public function actionDoujiangliangmian()
     {
-        return $this->render('doujianglengmian');
+        return $this->render('doujiangliangmian');
     }
 
     public function actionList()
     {
         return $this->render('list');
     }
-
-    public function actionHomecookinglist()
-    {
-        return $this->render('homecookinglist');
-    }
-
     public function actionChildrenlist()
     {
         return $this->render('childrenlist');
