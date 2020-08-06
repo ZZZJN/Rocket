@@ -58,7 +58,7 @@
 
 <div class="media" style="margin-bottom: 25px;">
     <div class="media-left media-middle">
-        <a href="#">
+        <a href="http://rocket/users/other-user.html">
             <img class="media-object img-circle" src="/用户头像/粉蒸肉.JPG" alt="爱生活的多妈" width="100px">
         </a>
     </div>
