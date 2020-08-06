@@ -28,6 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'usr_name'=>'是_煩','usr_imgsrc'=>'/用户头像/17.JPG']) ?>
         <?= app\widgets\recipe缩略图::widget(['recipe_name'=>'维尼煎蛋炒饭','recipe_imgsrc'=>'/菜谱缩略图/维尼煎蛋炒饭.jpeg',
             'usr_name'=>'悦己小食光','usr_imgsrc'=>'/用户头像/18.JPG']) ?>
+        <?= app\widgets\recipe缩略图::widget(['recipe_name'=>'粉蒸肉','recipe_imgsrc'=>'/菜谱缩略图/粉蒸肉.jpg',
+            'usr_name'=>'爱生活的多妈','usr_imgsrc'=>'/用户头像/粉蒸肉.JPG']) ?>
     </div>
 </div>
 
