@@ -45,7 +45,7 @@ $menu='User Menu';
 
     <br>
     <div class="subtitle">
-        <strong>2.&nbsp;饮食建议</strong>
+        <strong>3.&nbsp;饮食建议</strong>
     </div>
     <div class="content">
         糖尿病患者的蛋白质来源，大豆及其豆制品为好，一方面，其所含蛋白质量多质好；另一方面，其不含胆固醇，具有降脂作用，故可代替部分动物性食品，如肉类等。
@@ -56,7 +56,7 @@ $menu='User Menu';
 
     <br>
     <div class="subtitle">
-        <strong>2.&nbsp;饮食禁忌</strong>
+        <strong>4.&nbsp;饮食禁忌</strong>
     </div>
     <div class="content">
         要限制盐的摄入量，每日应逐渐减至6克以下，普通啤酒盖去掉胶垫后，一平盖食盐约为6克。这里所指的食盐量包括烹调用盐及其它食物中所含钠折合成食盐的总量。
