@@ -10,4 +10,13 @@ class IngredientController extends \yii\web\Controller
     {
         return $this->render('index');
     }
+    public function actionList()
+    {
+        return $this->render('list');
+    }
+        public function actionBroccoli()
+    {
+        return $this->render('broccoli');
+    }
+
 }
