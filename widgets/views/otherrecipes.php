@@ -6,7 +6,7 @@
     <span style="font-size: 17px;margin-left: 20px;">爱生活的多妈</span>
 </div>
 <div class="list-group" style="margin-left: 15px;margin-right:15px;">
-    <a href="#" class="list-group-item" style="background-color: #DABEC0;">
+    <a href="<?= \yii\helpers\Url::toRoute('recipe/doujiangliangmian') ?>" class="list-group-item" style="background-color: #DABEC0;">
         <h4 class="list-group-item-heading">豆浆凉面</h4>
         <p class="list-group-item-text">&emsp; 雪白的一碗豆浆冷面端出，散发着习习凉气，带着悠远的味道，赋予你夏日的平静，适合思念，又适合夏天。</p>
     </a>
