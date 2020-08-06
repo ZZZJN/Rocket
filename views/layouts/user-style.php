@@ -147,7 +147,7 @@ AppAsset::register($this);
         .'<a href="'
         .$userUrl
         .'">'
-        .'<img src="/用户头像/测试头像navbar用.JPG" alt="我的头像" class="img-circle" width="35px"'
+        .'<img src="/用户头像/测试头像navbar用.JPG" alt="我的头像" class="img-circle" width="35px">'
         .'</a>'
         . '</li>'
         .'<li>'
@@ -164,7 +164,7 @@ AppAsset::register($this);
         'items' => [
             ['label' => '首页', 'url' => ['/site/index']],
             ['label' => '食谱', 'url' => ['/recipe/list']],
-            ['label' => '食材', 'url' => ['/ingredient/index']],
+            ['label' => '食材', 'url' => ['/ingredient/list']],
             ['label' => '健康知识', 'url' => ['/health/index']],
             $change
         ],
