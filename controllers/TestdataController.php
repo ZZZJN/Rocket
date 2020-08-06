@@ -2,7 +2,7 @@
 
 
 namespace app\controllers;
-
+use Yii;
 
 class TestdataController extends \yii\web\Controller
 {
@@ -22,7 +22,9 @@ class TestdataController extends \yii\web\Controller
     }
     public function actionAddIngredient()
     {
-        $addi=create(\app\models\Ingredient::class,['introduction'=>'营养丰富','name'=>'鸡蛋']);
+        $recipes=\app\models\Recipe::find()->all();
+        $recipe=$recipes[0];
+        $addi=$recipe->create(\app\models\Ingredient::class,['introduction'=>'营养丰富','name'=>'鸡蛋']);
         return $addi->save();
     }
     public function actionAddClassification()
@@ -31,5 +33,23 @@ class TestdataController extends \yii\web\Controller
         $recipe=$recipes[0];
         $addc=$recipe->create(\app\models\Classification::class,['content'=>'家常菜']);
         return $addc->save();
+    }
+    public function actionAddFavorite()
+    {
+        $recipes=\app\models\Recipe::find()->all();
+        $recipe=$recipes[0];
+        $users=\app\models\User::find()->all();
+        $user=$users[0];
+        $addf=$user->create(\app\models\RecipeFavorite::class, ['recipe_guid'=>$recipe->guid]);
+        return $addf->save();
+    }
+    public function actionAddLike()
+    {
+        $recipes=\app\models\Recipe::find()->all();
+        $recipe=$recipes[0];
+        $users=\app\models\User::find()->all();
+        $user=$users[0];
+        $addf=$user->create(\app\models\RecipeLike::class, ['recipe_guid'=>$recipe->guid]);
+        return $addf->save();
     }
 }
