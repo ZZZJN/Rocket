@@ -132,6 +132,10 @@ AppAsset::register($this);
 
         <div class="container">
             <?= Breadcrumbs::widget([
+                'homeLink'=>[
+                    'label'=> '一日叁餐',
+                    'url'=> ['/site/index'],
+                ],
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>
             <?= Alert::widget() ?>
@@ -154,7 +158,7 @@ AppAsset::register($this);
                                     ['label' => '儿童', 'url' => ['/health/people2']],
                                     ['label' => '孕产妇', 'url' => ['/health/people3']],
                                     ['label' => '老年人', 'url' => ['/health/people4']],
-                                    ['label' => '素食', 'url' => ['/health/people5']]
+                                    ['label' => '素食主义者', 'url' => ['/health/people5']]
                                 ]
                             ],
                             [

@@ -3,8 +3,14 @@
 
 use yii\helpers\Html;
 
-$this->title = '我喜欢的菜';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = '我收藏的菜谱';
+$this->params['breadcrumbs'] = [
+    [
+        'label'=> '个人中心',
+        'url'=>['/users/index']
+    ],
+    '我收藏的菜谱'
+];
 ?>
 
 <div class="centerlist">

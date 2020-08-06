@@ -5,7 +5,13 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 $this->title = '修改信息';
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'] = [
+    [
+        'label'=> '个人中心',
+        'url'=>['/users/index']
+    ],
+    '修改信息'
+];
 ?>
 
 <div class="cinfo">
