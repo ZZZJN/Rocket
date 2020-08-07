@@ -39,7 +39,7 @@ HomeAsset::register($this);
                     <img src="/logo/横版.png" style="height: 90px;">
                     <!-- <h1 class="mb-3">一日叁餐</h1>  -->
                     <p class="mb-5" style="font-size:24px;padding-top: 140px;"><strong>我们不仅关注一日叁餐，</strong></p>
-                    <p class="mb-5" style="font-color:#011936;font-size: 28px;"><strong>还关心你。</strong></p>
+                    <p class="mb-5" style="font-color:#011936;font-size: 28px;"><strong>更关心你。</strong></p>
                 </div>
             </div>
         </div>
