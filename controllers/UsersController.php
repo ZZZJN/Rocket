@@ -68,5 +68,9 @@ class UsersController extends \yii\web\Controller
     {
         return $this->render('upload-recipe-detail');
     }
-    
+
+    public function actionUploadRecipeMore()
+    {
+        return $this->render('upload-recipe-more');
+    }
 }
